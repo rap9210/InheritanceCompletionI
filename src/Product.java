@@ -22,6 +22,12 @@ public class Product {
                 "Price:              " + this.getFormattedPrice(price) + "\n";
     }
 
+    //equals() now returns true when false and vice versa
+    @Override
+    public boolean equals(Object obj) {
+        return !super.equals(obj);
+    }
+
     public String  getFormattedPrice(double price) {
         // Use the NumberFormat class to format the price to 2 decimal places
         String formatPrice = NumberFormat.getCurrencyInstance().format(price);
