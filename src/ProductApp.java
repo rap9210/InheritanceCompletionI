@@ -27,7 +27,12 @@ public class ProductApp {
         System.out.println(nf001.toString());
         System.out.println(sw002.toString());
 
-        //equals() now returns true when false and vice versa
+
+        //equals() now returns false when true and vice versa for the parent class
+
+        //overwrote equals() in Book class to display opposite of parent class, so true when true, false when false + a print statement
         System.out.println(nf001.equals(nf001));
+        //overwrote equals() in the Software class to return same value as parent class but print out a statement.
+        System.out.println(sw002.equals(sw002));
     }
 }

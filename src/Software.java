@@ -3,6 +3,12 @@ public class Software extends Product{
     private String platform; // linux, mac, or pc
     private String os;
 
+    @Override
+    public boolean equals(Object obj) {
+        System.out.println("I modified equals() for the Software subclass");
+        return super.equals(obj);
+
+    }
     public String getProgrammer() {
         return programmer;
     }
